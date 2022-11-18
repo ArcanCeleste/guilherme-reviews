@@ -1,0 +1,228 @@
+body {
+  background-color: #f1f1f1;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 10px;
+}
+.titleArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titleText {
+  font-size: 40px;
+}
+.titleText a {
+  text-decoration: none;
+  color: inherit;
+}
+.titleUnderBar {
+  width: 120px;
+  height: 3px;
+  background-color: #00a2ff;
+}
+
+/* REVIEW AREA */
+.mainContent {
+  flex: 1;
+}
+.reviewArea {
+  background-color: #fff;
+  width: 700px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 5px #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.selectedReviewArea {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+}
+.selectedReview {
+  padding-inline: 5px;
+  text-align: center;
+  font-size: 15px;
+  outline: 0;
+  border: 1px solid #999;
+  border-radius: 10px;
+  max-width: 90%;
+}
+.selectedReviewLabel {
+  font-size: 16px;
+}
+.reviewInfos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*REVIEW AREA - Image Area*/
+
+.imageArea {
+  display: flex;
+  margin-bottom: 10px;
+}
+.imagePictureArea {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.imagePicture {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+  z-index: 1;
+}
+.imageUnderCircle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #00a2ff;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: -5px;
+}
+.imageAboveCircle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #00a2ff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  z-index: 2;
+  margin-top: 10px;
+  margin-left: 5px;
+  font-size: 75px;
+  color: #fff;
+  cursor: default;
+}
+
+/*REVIEW AREA - About Area*/
+
+.aboutArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.aboutName {
+  font-size: 20px;
+  font-family: monospace;
+}
+.aboutOccupation {
+  text-transform: uppercase;
+  color: #00a2ff;
+  font-family: monospace;
+  font-size: 18px;
+}
+.aboutDescription {
+  font-size: 18px;
+  color: #777;
+}
+
+/*REVIEWS AREA - Buttons Area*/
+
+.buttonsArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.nextAndPreviousBtn {
+  display: flex;
+  gap: 15px;
+}
+.previousBtn, .nextBtn {
+  font-size: 40px;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  color: #00a2ff;
+  cursor: pointer;
+}
+.surpriseMeBtn {
+  font-size: 16px;
+  padding: 2px 5px;
+  border-radius: 10px;
+  background-color: #effffb;
+  color: #00a2ff;
+  cursor: pointer;
+  border-top: 2px solid #00a2ff;
+  border-left: 2px solid #00a2ff;
+  border-right: 2px solid #006dac;
+  border-bottom: 2px solid #006dac;
+}
+
+/*FOOTER AREA*/
+
+.footerSite small {
+  color: #909090;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 740px) {
+  .mainContent {
+    width: 95%;
+  }
+  .reviewArea {
+    width: 100%;
+  }
+  .selectedReviewArea {
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutName {
+    font-size: 19px;
+  }
+  .aboutOccupation {
+    font-size: 17px;
+  }
+  .aboutDescription {
+    font-size: 17px;
+  }
+}
+@media (max-width: 440px) {
+  .titleText {
+    font-size: 30px;
+  }
+  .mainContent {
+    width: 95%;
+  }
+  .reviewArea {
+    width: 100%;
+  }
+  .selectedReview {
+    font-size: 13px;
+  }
+  .selectedReviewLabel {
+    font-size: 14px;
+  }
+  .aboutName {
+    font-size: 16px;
+  }
+  .aboutOccupation {
+    font-size: 15px;
+  }
+  .aboutDescription {
+    font-size: 15px;
+  }
+}
